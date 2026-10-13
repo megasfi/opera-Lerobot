@@ -1,6 +1,6 @@
 # opera-Lerobot
 SO-101リーダーアームで、OPERA-Simを動かすためのスクリプト群です。
-
+※OperaSim-PhysXについては　https://operasim-physx.readthedocs.io/ja/latest/install.html#ros-tcp-connector　を参照してください。
 
 ## 1.全体の流れ
 【Windows】SO-101 を WSL2 にアタッチ
@@ -55,3 +55,12 @@ SO-101リーダーアームで、OPERA-Simを動かすためのスクリプト�
 5. source /opt/ros/humble/setup.bash
 6. source ~/ros2_ws/install/setup.bash
 7. ros2 run ros_tcp_endpoint default_server_endpoint --ros-args -p ROS_IP:=0.0.0.0 -p ROS_TCP_PORT:=10000
+
+## 8.エピソードを記録する
+1. 新しいタブでコマンドプロンプトを開く
+2. wsl -d Ubuntu-24.04
+3. cd ~/ros2_ws/src/opera-ros2-rocker
+4. sudo ./enter.sh
+5. source /opt/ros/humble/setup.bash
+6. source ~/ros2_ws/install/setup.bash
+7. python3 ~/ros2_ws/src/so101_zx120_bridge/so101_zx120_bridge/recorder_node.py
