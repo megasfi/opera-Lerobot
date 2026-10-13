@@ -29,7 +29,7 @@ SO-101リーダーアームで、OPERA-Simを動かすためのスクリプト�
 5. source /opt/ros/humble/setup.bash
 6. source ~/ros2_ws/install/setup.bash
 7. ros2 launch zx120_unity zx120_standby.launch.py
-* * ※ただし７は、rvizが立ち上がるので、OperaSim-PhysXを立ち上げるときは"7"へ
+* * ※ただし７は、rvizが立ち上がるので、OperaSim-PhysXを立ち上げるときは**見出し７**へ
 
 ## 5.LeaderからOperaにデータを渡す
 1. 新しいタブでコマンドプロンプトを開く
@@ -45,3 +45,13 @@ SO-101リーダーアームで、OPERA-Simを動かすためのスクリプト�
 2. wsl -d Ubuntu-24.04
 3. source ~/lerobot/venv/bin/activate
 4. python3 ~/opera_lerobot/so101_zmq_sender.py
+
+## 7.OperaSim-PhysXとSO-10sudo ./start.sh1の動作をつなぐ
+* * ※**見出し４**で立ち上げたタブを使ってもよい。その場合はコンテナに入る必要はないので、以下の1-4の手順は不要
+1. 新しいタブでコマンドプロンプトを開く
+2. wsl -d Ubuntu-24.04
+3. cd ~/ros2_ws/src/opera-ros2-rocker
+4. sudo ./start.sh
+5. source /opt/ros/humble/setup.bash
+6. source ~/ros2_ws/install/setup.bash
+7. ros2 run ros_tcp_endpoint default_server_endpoint --ros-args -p ROS_IP:=0.0.0.0 -p ROS_TCP_PORT:=10000
