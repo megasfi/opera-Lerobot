@@ -29,6 +29,7 @@ SO-101リーダーアームで、OPERA-Simを動かすためのスクリプト�
 5. source /opt/ros/humble/setup.bash
 6. source ~/ros2_ws/install/setup.bash
 7. ros2 launch zx120_unity zx120_standby.launch.py
+* * ※ただし７は、rvizが立ち上がるので、OperaSim-PhysXを立ち上げるときは"7"へ
 
 ## 5.LeaderからOperaにデータを渡す
 1. 新しいタブでコマンドプロンプトを開く
