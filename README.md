@@ -46,7 +46,7 @@ SO-101リーダーアームで、OPERA-Simを動かすためのスクリプト�
 3. source ~/lerobot/venv/bin/activate
 4. python3 ~/opera_lerobot/so101_zmq_sender.py
 
-## 7.OperaSim-PhysXとSO-10sudo ./start.sh1の動作をつなぐ
+## 7.OperaSim-PhysXとSO-101の動作をつなぐ
 * * ※**見出し４**で立ち上げたタブを使ってもよい。その場合はコンテナに入る必要はないので、以下の1-4の手順は不要
 1. 新しいタブでコマンドプロンプトを開く
 2. wsl -d Ubuntu-24.04
