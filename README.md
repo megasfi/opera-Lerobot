@@ -64,3 +64,11 @@ SO-101リーダーアームで、OPERA-Simを動かすためのスクリプト�
 5. source /opt/ros/humble/setup.bash
 6. source ~/ros2_ws/install/setup.bash
 7. python3 ~/ros2_ws/src/so101_zx120_bridge/so101_zx120_bridge/recorder_node.py
+
+## 9.取得したエピソードをバックアップ
+1. 新しいタブでコマンドプロンプトを開く
+2. wsl -d Ubuntu-24.04
+3. mv ~/opera_lerobot/recordings ~/opera_lerobot/recordings_old_$(date +%Y%m%d_%H%M) 2>/dev/null
+4. mkdir -p ~/opera_lerobot/recordings
+5. sudo docker cp pwri-opera-ros2:/root/ros2_ws/recordings/. ~/opera_lerobot/recordings/
+6. sudo chown -R $USER:$USER ~/opera_lerobot/recordings
