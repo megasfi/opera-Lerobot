@@ -13,7 +13,7 @@ SO-101リーダーアームで、OPERA-Simを動かすためのスクリプト�
 
 | スクリプト | 概要 |
 | --- | --- |
-| bridge_node.py |
+| bridge_node.py |SO-101 リーダーアーム → zx120(Gazebo) 関節写像ブリッジ（確定版）。
 | check_lerobot.py |  |
 | leader_analisys.py |  |
 | mapping_design.py |  |
