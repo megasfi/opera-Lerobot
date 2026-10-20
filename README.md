@@ -5,8 +5,8 @@ SO-101リーダーアームで、OPERA-Simを動かすためのスクリプト�
 ## 1.全体の構成
 【Windows】SO-101 を WSL2 にアタッチ
 【WSL2】コンテナ起動（start.sh）
-  ├ シェル1：RViz + 制御系（zx120_standby）
-  ├ シェル2：ブリッジ（so101_zx120_bridge）
+├ シェル1：RViz + 制御系（zx120_standby）
+├ シェル2：ブリッジ（so101_zx120_bridge）
 【WSL2ネイティブ】シェル3：送信スクリプト（lerobot）
 
 * それぞれのスクリプトの機能については、下表をご覧ください。
