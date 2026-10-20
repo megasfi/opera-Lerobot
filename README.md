@@ -14,11 +14,11 @@ SO-101リーダーアームで、OPERA-Simを動かすためのスクリプト�
 | スクリプト | 概要 |
 | --- | --- |
 | bridge_node.py |SO-101 リーダーアーム → zx120(Gazebo) 関節写像ブリッジ（確定版）。
-| check_lerobot.py |  |
-| leader_analisys.py |  |
-| mapping_design.py |  |
-| recorder_node.py |  |
-| urdf_analisys.py |  |
+| check_lerobot.py | SO-101がつながっているかを確認 |
+| leader_analisys.py | SO-101の関節角度を確認 |
+| mapping_design.py | SO-101のキャリブレーション値をzx120の関節角度に換算 |
+| recorder_node.py | データセット記録用スクリプト |
+| urdf_analisys.py | zx120のurdf設計を解析 |
 |offline_eval.py|評価用データセットで、方策の予測actionと記録actionを比較する。|
 | policy_io_node.py | 方策評価用の入出力ノード。観測をZeroMQで送り、受け取ったactionを/zx120/*/cmdに送る。 |
 | policy_runner.py | ZeroMQで観測を受け取り、ACTで推論したactionを送り返す。 |
