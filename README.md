@@ -1,3 +1,13 @@
+| 順序 | 場所 | 操作 |
+|---|---|---|
+| 1 | WSL2・コンテナ | SO-101送信スクリプトとブリッジを`Ctrl+C`で停止する |
+| 2 | Windows | UnityのPlayを停止し、再びPlayする（環境をリセット） |
+| 3 | コンテナ | endpointが起動していることを確認する |
+| 4 | コンテナ | `ros2 run so101_zx120_bridge zx120_policy_io` |
+| 5 | コンテナ | 評価の様子を記録する（任意） |
+| 6 | WSL2 | 方策実行スクリプトを起動する |
+| 7 | Windows | Unityの画面で動作を観察し、結果を記録する |
+
 # opera-Lerobot
 SO-101リーダーアームで、OPERA-Simを動かすためのスクリプト群です。
 ※OperaSim-PhysXについては　https://operasim-physx.readthedocs.io/ja/latest/install.html#ros-tcp-connector　を参照してください。
