@@ -152,4 +152,7 @@ lerobot-train \
 - source ~/ros2_ws/install/setup.bash
 - python3 ~/ros2_ws/src/so101_zx120_bridge/so101_zx120_bridge/policy_io_node.py
 
- 
+source ~/lerobot/venv/bin/activate
+python3 ~/opera_lerobot/policy_runner.py \
+  --policy_path ~/opera_lerobot/outputs/train/act_zx120_v1/checkpoints/last/pretrained_model \
+  --duration 60
