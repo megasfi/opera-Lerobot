@@ -135,3 +135,11 @@ lerobot-train \
   --steps=20000 \
   --save_freq=5000 \
   --wandb.enable=false
+
+## 12.方策を実行する。
+ cd ~/ros2_ws/src/opera-ros2-rocker
+ sudo ./enter.shsource /opt/ros/humble/setup.bash
+ source ~/ros2_ws/install/setup.bash
+ python3 ~/ros2_ws/src/so101_zx120_bridge/so101_zx120_bridge/policy_io_node.py
+
+ 
