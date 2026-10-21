@@ -70,6 +70,18 @@ SO-101リーダーアームで、OPERA-Simを動かすためのスクリプト�
 6. source ~/ros2_ws/install/setup.bash
 7. ros2 run ros_tcp_endpoint default_server_endpoint --ros-args -p ROS_IP:=0.0.0.0 -p ROS_TCP_PORT:=10000
 
+### なんか動かないときは以下の手順を実行
+既存のendpointを停止して、残っていないことを確認する
+source /opt/ros/humble/setup.bash
+source /ws/install/setup.bash
+source ~/ros2_ws/install/setup.bash
+pkill -f default_server_endpoint
+sleep 1
+ps aux | grep default_server_endpoint | grep -v grep   # 何も表示されなければよい
+
+ros2 run ros_tcp_endpoint default_server_endpoint \
+  --ros-args -p ROS_IP:=0.0.0.0 -p ROS_TCP_PORT:=10000
+
 ## 8.エピソードを記録する
 1. 新しいタブでコマンドプロンプトを開く
 2. wsl -d Ubuntu-24.04
