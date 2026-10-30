@@ -157,7 +157,7 @@ lerobot-train \
 -  zx120_recorder（10 Hz 記録）
 -  zx120_policy_io（ZMQ PUB 5600 obs / SUB 5601 action）※実在未確認
 -       ↕ ZeroMQ 127.0.0.1（--network host）
--【WSL2 rsakai@】Ubuntu 24.04 / RTX 3070 8 GB
+-【WSL2】Ubuntu 24.04 / RTX 3070 8 GB
 -  SO-101 Leader(/dev/ttyACM0) → so101_zmq_sender.py（ZMQ PUB 5599）
 -  LeRobot 0.6.2（~/lerobot, venv Py3.12）/ convert_to_lerobot.py / policy_runner.py
 
