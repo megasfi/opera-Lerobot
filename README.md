@@ -160,7 +160,7 @@ lerobot-train \
 -【WSL2】Ubuntu 24.04 / RTX 3070 8 GB
 -  SO-101 Leader(/dev/ttyACM0) → so101_zmq_sender.py（ZMQ PUB 5599）
 -  LeRobot 0.6.2（~/lerobot, venv Py3.12）/ convert_to_lerobot.py / policy_runner.py
-
+以下実行時コマンド
 - cd ~/ros2_ws/src/opera-ros2-rocker
 - sudo ./enter.shsource
 - /opt/ros/humble/setup.bash
