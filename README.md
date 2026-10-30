@@ -148,7 +148,7 @@ lerobot-train \
 
 ## 12.方策を実行する。
 
-###方策実行時の構成
+### 方策実行時の構成
 -【Windows ネイティブ】Unity Editor / OperaSim-PhysX（zx120, PhysX 土砂）
 -       ↕ ROS-TCP :10000
 -【コンテナ root@pwri-opera-ros2】ROS 2 Humble
@@ -161,7 +161,7 @@ lerobot-train \
 -  SO-101 Leader(/dev/ttyACM0) → so101_zmq_sender.py（ZMQ PUB 5599）
 -  LeRobot 0.6.2（~/lerobot, venv Py3.12）/ convert_to_lerobot.py / policy_runner.py
 
-###以下実行時コマンド
+### 以下実行時コマンド
 - cd ~/ros2_ws/src/opera-ros2-rocker
 - sudo ./enter.shsource
 - /opt/ros/humble/setup.bash
