@@ -149,17 +149,17 @@ lerobot-train \
 ## 12.方策を実行する。
 
 方策実行時の構成
-【Windows ネイティブ】Unity Editor / OperaSim-PhysX（zx120, PhysX 土砂）
-        ↕ ROS-TCP :10000
-【コンテナ root@pwri-opera-ros2】ROS 2 Humble
-   ros_tcp_endpoint ─ /zx120/{swing,boom,arm,bucket}/cmd, /zx120/joint_states, /zx120/cam{1,2}
-   so101_to_zx120_bridge（ZMQ SUB 5599 → cmd, max_step=0.1）
-   zx120_recorder（10 Hz 記録）
-   zx120_policy_io（ZMQ PUB 5600 obs / SUB 5601 action）※実在未確認
-        ↕ ZeroMQ 127.0.0.1（--network host）
-【WSL2 rsakai@】Ubuntu 24.04 / RTX 3070 8 GB
-   SO-101 Leader(/dev/ttyACM0) → so101_zmq_sender.py（ZMQ PUB 5599）
-   LeRobot 0.6.2（~/lerobot, venv Py3.12）/ convert_to_lerobot.py / policy_runner.py
+-【Windows ネイティブ】Unity Editor / OperaSim-PhysX（zx120, PhysX 土砂）
+-       ↕ ROS-TCP :10000
+-【コンテナ root@pwri-opera-ros2】ROS 2 Humble
+-  ros_tcp_endpoint ─ /zx120/{swing,boom,arm,bucket}/cmd, /zx120/joint_states, /zx120/cam{1,2}
+-  so101_to_zx120_bridge（ZMQ SUB 5599 → cmd, max_step=0.1）
+-  zx120_recorder（10 Hz 記録）
+-  zx120_policy_io（ZMQ PUB 5600 obs / SUB 5601 action）※実在未確認
+-       ↕ ZeroMQ 127.0.0.1（--network host）
+-【WSL2 rsakai@】Ubuntu 24.04 / RTX 3070 8 GB
+-  SO-101 Leader(/dev/ttyACM0) → so101_zmq_sender.py（ZMQ PUB 5599）
+-  LeRobot 0.6.2（~/lerobot, venv Py3.12）/ convert_to_lerobot.py / policy_runner.py
 
 - cd ~/ros2_ws/src/opera-ros2-rocker
 - sudo ./enter.shsource
